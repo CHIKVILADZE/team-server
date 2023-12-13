@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 app.use(bodyParser.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://team-client-nine.vercel.app' }));
 
 const dataPath = 'data.json';
 let rawData = fs.readFileSync(dataPath);
